@@ -1,0 +1,326 @@
+body {
+  background-color: rgb(6, 0, 57);
+  overflow: hidden;
+  animation-name: backgroundChange;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+div {
+  background-color: white;
+  width: 0.2rem;
+  height: 0.2rem;
+  position: absolute;
+}
+
+div:nth-child(1) {
+  left: 3vw;
+  top: 6vh;
+  animation-name: stars;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+}
+
+div:nth-child(2) {
+  right: 80vw;
+  bottom: 70vh;
+  animation-name: stars;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+div:nth-child(3) {
+  left: 70vw;
+  bottom: 60vh;
+  animation-name: stars;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 5s;
+}
+
+div:nth-child(4) {
+  right: 45vw;
+  top: 30vh;
+  animation-name: stars;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+
+div:nth-child(5) {
+  right: 20vw;
+  bottom: 10vh;
+  animation-name: stars;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay: 7s;
+}
+
+div:nth-child(6) {
+  right: 17vw;
+  top: 10vh;
+  animation-name: stars;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+
+div:nth-child(7) {
+  left: 40vw;
+  top: 10vh;
+  animation-name: stars;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+
+div:nth-child(8) {
+  left: 15vw;
+  bottom: 5vh;
+  animation-name: stars;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay: 4s;
+}
+
+div:nth-child(9) {
+  right: 75vw;
+  top: 60vh;
+  animation-name: stars;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-delay: 6s;
+}
+
+div:nth-child(10) {
+  right: 50vw;
+  bottom: 20vh;
+  animation-name: stars;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 7s;
+}
+
+div:nth-child(11) {
+  right: 10vw;
+  bottom: 30vh;
+  animation-name: stars;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+#magnifying-glass {
+  background-color: transparent;
+  font-size: 10em;
+  display: inline-block;
+  width: 0.4em;
+  box-sizing: content-box;
+  height: 0.4em;
+  border: 0.1em solid blue;
+  position: relative;
+  border-radius: 0.35em;
+}
+
+#magnifying-glass:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: -0.25em;
+  bottom: -0.1em;
+  border-width: 0;
+  background-color: blue;
+  width: 0.35em;
+  height: 0.08em;
+  transform: rotate(45deg);
+}
+
+.space-invader {
+  box-shadow: 0 0 0 1em red,
+    0 1em 0 1em red,
+    -2.5em 1.5em 0 .5em red,
+    2.5em 1.5em 0 .5em red,
+    -3em -3em 0 0 red,
+    3em -3em 0 0 red,
+    -2em -2em 0 0 red,
+    2em -2em 0 0 red,
+    -3em -1em 0 0 red,
+    -2em -1em 0 0 red,
+    2em -1em 0 0 red,
+    3em -1em 0 0 red,
+    -4em 0 0 0 red,
+    -3em 0 0 0 red,
+    3em 0 0 0 red,
+    4em 0 0 0 red,
+    -5em 1em 0 0 red,
+    -4em 1em 0 0 red,
+    4em 1em 0 0 red,
+    5em 1em 0 0 red,
+    -5em 2em 0 0 red,
+    5em 2em 0 0 red,
+    -5em 3em 0 0 red,
+    -3em 3em 0 0 red,
+    3em 3em 0 0 red,
+    5em 3em 0 0 red,
+    -2em 4em 0 0 red,
+    -1em 4em 0 0 red,
+    1em 4em 0 0 red,
+    2em 4em 0 0 red;
+  background: red;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  margin: 50px 0 70px 65px;
+}
+
+#pointer {
+  width: 200px;
+  height: 40px;
+  position: relative;
+  background: white;
+}
+
+#pointer:before {
+  content: "";
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+
+div:nth-child(12) {
+  animation-name: float;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+}
+
+div:nth-child(13) {
+  animation-name: float2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+div:nth-child(14) {
+  animation-name: appearright;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+
+
+@keyframes backgroundChange {
+  50% {
+    background-color: rgb(14, 4, 99);
+  }
+}
+
+@keyframes stars {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  40% {
+    transform: scale(0.1, 0.1);
+  }
+
+  50% {
+    transform: scale(1, 1);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translate(45vw, 45vh) rotate(0) scale(5, 5);
+  }
+
+  50% {
+    transform: translate(46vw, 46vh) rotate(5deg) scale(5, 5);
+  }
+
+  100% {
+    transform: translate(45vw, 45vh) rotate(0) scale(5, 5);
+  }
+}
+
+@keyframes float2 {
+  0% {
+    transform: translate(42vw, 33vh) scale(0.001, 0.001);
+  }
+
+  20% {
+    transform: translate(42vw, 33vh) rotate(0deg) scale(1, 1);
+  }
+
+  50% {
+    transform: translate(44vw, 34vh) rotate(360deg);
+  }
+
+  80% {
+    transform: translate(42vw, 33vh) rotate(0deg) scale(1, 1);
+  }
+
+  100% {
+    transform: translate(42vw, 33vh) scale(0.001, 0.001);
+  }
+}
+
+@keyframes appearright {
+
+  0% {
+
+    transform: translate(110vw, 50vh);
+
+  }
+
+  10% {
+
+    transform: translate(96vw, 50vh) rotate(-10deg);
+
+  }
+
+  30% {
+    transform: translate(96vw, 50vh) rotate(10deg);
+  }
+
+  35% {
+    transform: translate(110vw, 50vh);
+  }
+
+  40% {
+    transform: translate(110vw, 50vh);
+  }
+
+  50% {
+    transform: translate(27vw, 20vh);
+  }
+
+  58% {
+    transform: translate(27vw, 20vh) rotate(360deg);
+  }
+
+  66% {
+    transform: translate(27vw, 20vh);
+  }
+
+  74% {
+    transform: translate(27vw, 20vh) rotate(360deg);
+  }
+
+  82% {
+    transform: translate(27vw, 20vh);
+  }
+
+  100% {
+    transform: translate(-75vw, 20vh) rotate(-50deg);
+  }
+
+}
